@@ -1,128 +1,112 @@
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Send, MessageSquare } from 'lucide-react';
-import { GithubIcon as Github, LinkedinIcon as Linkedin } from './Icons';
+import { Mail, MapPin, Github, Send, Phone } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="section-padding relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-sky-100 rounded-full blur-[100px]"></div>
-
+    <section id="contact" className="section-padding bg-slate-50/50">
       <div className="container mx-auto px-6 md:px-12">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="section-title">Get In Touch</h2>
-          <p className="section-subtitle">
-            Ready to start your next project? Let's discuss how I can help you achieve your goals.
-          </p>
-        </motion.div>
-
-        <div className="grid lg:grid-cols-2 gap-16">
-          {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
+        <div className="flex flex-col lg:flex-row gap-16">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
+            className="lg:w-1/2"
           >
-            <h3 className="text-3xl font-bold text-slate-900 mb-8">Contact Information</h3>
-            <div className="space-y-8 mb-12">
-              <div className="flex items-start space-x-6 group">
-                <div className="w-14 h-14 rounded-2xl glass flex items-center justify-center text-sky-600 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300">
-                  <Mail size={24} />
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight">
+              Let’s Work <span className="text-gradient">Together</span>
+            </h2>
+            <p className="text-xl text-slate-500 mb-12 font-medium">
+              Have a project idea? Let’s discuss how I can help you build a modern website. 
+              I'm always open to new opportunities and interesting collaborations.
+            </p>
+
+            <div className="space-y-8">
+              <div className="flex items-center gap-6 group">
+                <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-primary-500 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                  <MapPin size={28} />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-slate-900 mb-1">Email Me</h4>
-                  <p className="text-slate-600">malikmajid5140@gmail.com</p>
+                  <h4 className="font-extrabold text-slate-900 text-lg">Location</h4>
+                  <p className="text-slate-500 font-medium">Pakistan</p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-6 group">
-                <div className="w-14 h-14 rounded-2xl glass flex items-center justify-center text-primary-500 group-hover:bg-primary-600 group-hover:text-slate-900 transition-all duration-300">
-                  <MessageSquare size={24} />
+              <div className="flex items-center gap-6 group">
+                <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-accent-rose shadow-sm group-hover:scale-110 transition-transform duration-300">
+                  <Mail size={28} />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-slate-900 mb-1">WhatsApp</h4>
-                  <p className="text-slate-600">03021651294</p>
+                  <h4 className="font-extrabold text-slate-900 text-lg">Email</h4>
+                  <p className="text-slate-500 font-medium">kiran@example.com</p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-6 group">
-                <div className="w-14 h-14 rounded-2xl glass flex items-center justify-center text-primary-500 group-hover:bg-primary-600 group-hover:text-slate-900 transition-all duration-300">
-                  <MapPin size={24} />
+              <div className="flex items-center gap-6 group">
+                <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-accent-sky shadow-sm group-hover:scale-110 transition-transform duration-300">
+                  <Phone size={28} />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-slate-900 mb-1">Location</h4>
-                  <p className="text-slate-600">Lahore, Pakistan</p>
+                  <h4 className="font-extrabold text-slate-900 text-lg">WhatsApp</h4>
+                  <p className="text-slate-500 font-medium">+92 300 0000000</p>
                 </div>
               </div>
-            </div>
 
-            <h4 className="text-xl font-bold text-slate-900 mb-6">Follow Me</h4>
-            <div className="flex space-x-4">
-              <a href="https://github.com/malikmajid161" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-xl glass flex items-center justify-center text-slate-600 hover:text-white hover:bg-sky-600 transition-all duration-300">
-                <Github size={20} />
-              </a>
-              <a href="https://www.linkedin.com/in/muhammadmajidali" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-xl glass flex items-center justify-center text-slate-600 hover:text-slate-900 hover:bg-primary-600 transition-all duration-300">
-                <Linkedin size={20} />
-              </a>
+              <div className="flex items-center gap-6 group">
+                <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-slate-900 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                  <Github size={28} />
+                </div>
+                <div>
+                  <h4 className="font-extrabold text-slate-900 text-lg">GitHub</h4>
+                  <a href="https://github.com/kiranyasmeen" target="_blank" rel="noopener noreferrer" className="text-slate-500 font-medium hover:text-primary-600 transition-colors">
+                    github.com/kiranyasmeen
+                  </a>
+                </div>
+              </div>
             </div>
           </motion.div>
 
-          {/* Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="glass-card p-10"
+            className="lg:w-1/2"
           >
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-slate-600">Your Name</label>
-                  <input 
-                    type="text" 
-                    placeholder="John Doe" 
-                    className="w-full bg-white/5 border border-slate-200/60 rounded-xl px-4 py-3 text-slate-900 focus:outline-none focus:border-primary-500 transition-colors"
-                  />
+            <div className="p-10 glass-card bg-white shadow-xl shadow-primary-100/50">
+              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-sm font-black text-slate-700 uppercase tracking-wider ml-1">Name</label>
+                    <input type="text" placeholder="John Doe" className="w-full px-6 py-4 rounded-2xl border border-slate-100 bg-slate-50 focus:bg-white focus:outline-none focus:ring-4 focus:ring-primary-100 transition-all font-medium" />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-black text-slate-700 uppercase tracking-wider ml-1">Email</label>
+                    <input type="email" placeholder="john@example.com" className="w-full px-6 py-4 rounded-2xl border border-slate-100 bg-slate-50 focus:bg-white focus:outline-none focus:ring-4 focus:ring-primary-100 transition-all font-medium" />
+                  </div>
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-slate-600">Your Email</label>
-                  <input 
-                    type="email" 
-                    placeholder="john@example.com" 
-                    className="w-full bg-white/5 border border-slate-200/60 rounded-xl px-4 py-3 text-slate-900 focus:outline-none focus:border-primary-500 transition-colors"
-                  />
+                  <label className="text-sm font-black text-slate-700 uppercase tracking-wider ml-1">Service Needed</label>
+                  <select className="w-full px-6 py-4 rounded-2xl border border-slate-100 bg-slate-50 focus:bg-white focus:outline-none focus:ring-4 focus:ring-primary-100 transition-all font-medium appearance-none">
+                    <option>Select a Service</option>
+                    <option>Portfolio Website</option>
+                    <option>Business Website</option>
+                    <option>Landing Page</option>
+                    <option>UI/UX Design</option>
+                  </select>
                 </div>
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-600">Service Needed</label>
-                <select className="w-full bg-white/5 border border-slate-200/60 rounded-xl px-4 py-3 text-slate-900 focus:outline-none focus:border-sky-500 transition-colors appearance-none">
-                  <option className="bg-white">Portfolio Website</option>
-                  <option className="bg-white">Business Website</option>
-                  <option className="bg-white">React Application</option>
-                  <option className="bg-white">Other</option>
-                </select>
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-600">Message</label>
-                <textarea 
-                  rows="5" 
-                  placeholder="Tell me about your project..." 
-                  className="w-full bg-white/5 border border-slate-200/60 rounded-xl px-4 py-3 text-slate-900 focus:outline-none focus:border-primary-500 transition-colors"
-                ></textarea>
-              </div>
-              <button type="submit" className="w-full btn-primary bg-sky-600 hover:bg-sky-700 shadow-sky-200 flex items-center justify-center space-x-2 py-4">
-                <span>Send Message</span>
-                <Send size={18} />
-              </button>
-            </form>
+                <div className="space-y-2">
+                  <label className="text-sm font-black text-slate-700 uppercase tracking-wider ml-1">Message</label>
+                  <textarea rows="5" placeholder="Your message here..." className="w-full px-6 py-4 rounded-2xl border border-slate-100 bg-slate-50 focus:bg-white focus:outline-none focus:ring-4 focus:ring-primary-100 transition-all font-medium resize-none"></textarea>
+                </div>
+                <motion.button 
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="btn-primary w-full flex items-center justify-center gap-3 text-lg"
+                >
+                  <Send size={20} />
+                  <span>Send Message</span>
+                </motion.button>
+              </form>
+            </div>
           </motion.div>
         </div>
       </div>

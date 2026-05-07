@@ -1,66 +1,53 @@
 import { motion } from 'framer-motion';
-import { skills } from '../data/skills';
+import { skillCategories } from '../data/skills';
 
 const Skills = () => {
-  const categories = [
-    { title: 'Frontend', key: 'frontend' },
-    { title: 'Backend', key: 'backend' },
-    { title: 'Database & Services', key: 'database' },
-    { title: 'Tools & Workflow', key: 'tools' },
-    { title: 'Other Skills', key: 'other' },
-  ];
-
   return (
-    <section id="skills" className="section-padding">
-      <div className="container mx-auto px-6 md:px-12">
+    <section id="skills" className="section-padding bg-white relative overflow-hidden">
+      <div className="container mx-auto px-6 md:px-12 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <h2 className="section-title">My Technical Skills</h2>
+          <h2 className="section-title">My <span className="text-gradient">Skills</span></h2>
           <p className="section-subtitle">
-            A comprehensive overview of the technologies and tools I use to bring projects to life.
+            A comprehensive overview of my technical expertise and the tools I use to bring digital ideas to life.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-x-16 gap-y-12">
-          {categories.map((cat, catIndex) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+          {skillCategories.map((category, idx) => (
             <motion.div
-              key={cat.key}
-              initial={{ opacity: 0, x: catIndex % 2 === 0 ? -30 : 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
+              key={idx}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
+              transition={{ delay: idx * 0.1 }}
+              className="p-10 glass-card border-slate-100/50 hover:border-primary-100"
             >
-              <h3 className="text-2xl font-bold text-slate-900 mb-8 border-l-4 border-amber-500 pl-4">
-                {cat.title}
+              <h3 className="text-2xl font-black text-slate-900 mb-8 border-b border-slate-100 pb-4 inline-block">
+                {category.title}
               </h3>
-              <div className="space-y-6">
-                {skills[cat.key].map((skill) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-slate-500 font-semibold">{skill.name}</span>
-                      <span className="text-amber-600 font-bold">{skill.level}%</span>
-                    </div>
-                    <div className="h-2 w-full bg-white/5 rounded-full overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        transition={{ duration: 1, delay: 0.2 }}
-                        viewport={{ once: true }}
-                        className="h-full bg-gradient-to-r from-amber-500 to-amber-300 rounded-full shadow-[0_0_10px_rgba(245,158,11,0.3)]"
-                      />
-                    </div>
-                  </div>
+              <div className="flex flex-wrap gap-4">
+                {category.skills.map((skill) => (
+                  <motion.div
+                    key={skill}
+                    whileHover={{ scale: 1.1, backgroundColor: '#f5f3ff', color: '#7c3aed' }}
+                    className="px-5 py-3 rounded-xl bg-slate-50 text-slate-600 font-bold text-sm shadow-sm transition-colors cursor-default"
+                  >
+                    {skill}
+                  </motion.div>
                 ))}
               </div>
             </motion.div>
           ))}
         </div>
       </div>
+      
+      {/* Decorative Blur */}
+      <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary-100/30 rounded-full blur-[120px] -translate-x-1/2"></div>
     </section>
   );
 };

@@ -1,59 +1,50 @@
-import { 
-  Globe, 
-  Briefcase, 
-  Layout, 
-  Code2, 
-  Smartphone, 
-  RefreshCcw, 
-  Layers, 
-  Database, 
-  Rocket 
-} from 'lucide-react';
-
 export const services = [
   {
-    title: "Portfolio Website Development",
-    description: "Creating stunning personal brands that showcase your work and attract potential clients.",
-    icon: Globe
+    id: 1,
+    title: "Personal Portfolio Website",
+    description: "Modern portfolio websites to showcase your skills, work, and personal brand.",
+    icon: "Layout"
   },
   {
+    id: 2,
     title: "Business Website Development",
-    description: "Building professional websites for businesses to establish a strong online presence.",
-    icon: Briefcase
+    description: "Professional websites for small businesses, startups, and service providers.",
+    icon: "Briefcase"
   },
   {
+    id: 3,
     title: "Landing Page Design",
-    description: "Designing high-converting landing pages tailored to your specific marketing goals.",
-    icon: Layout
+    description: "High-converting landing pages for products, campaigns, and services.",
+    icon: "MousePointer"
   },
   {
-    title: "React Website Development",
-    description: "Developing modern, fast, and interactive web applications using the latest React ecosystem.",
-    icon: Code2
-  },
-  {
+    id: 4,
     title: "Responsive Web Design",
-    description: "Ensuring your website looks and works perfectly on all devices, from mobile to desktop.",
-    icon: Smartphone
+    description: "Websites that look perfect on mobile, tablet, and desktop.",
+    icon: "Smartphone"
   },
   {
+    id: 5,
     title: "Website Redesign",
-    description: "Modernizing your existing website with fresh design and improved user experience.",
-    icon: RefreshCcw
+    description: "Improve old websites with modern UI, better layout, and clean design.",
+    icon: "RefreshCw"
   },
   {
+    id: 6,
     title: "Frontend Development",
-    description: "Crafting pixel-perfect, interactive user interfaces with clean and maintainable code.",
-    icon: Layers
+    description: "Clean frontend development using HTML, CSS, JavaScript, React, and Tailwind CSS.",
+    icon: "Code"
   },
   {
-    title: "Backend/API Integration",
-    description: "Connecting your frontend to powerful backends and third-party APIs for dynamic features.",
-    icon: Database
+    id: 7,
+    title: "UI/UX Design",
+    description: "Simple, attractive, and user-friendly layouts focused on better user experience.",
+    icon: "Figma"
   },
   {
-    title: "Deployment & Optimization",
-    description: "Fast and secure deployment on Vercel or Netlify with performance optimization.",
-    icon: Rocket
+    id: 8,
+    title: "Deployment Support",
+    description: "Help with deploying websites on Vercel, Netlify, or other platforms.",
+    icon: "Globe"
   }
 ];

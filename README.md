@@ -1,13 +1,13 @@
-# 💎 Muhammad Majid Ali | Professional Web Portfolio
+# 💎 Kiran Yasmeen | Professional Web Portfolio
 
 <p align="center">
-  <img src="./public/profile.png" width="160" height="160" style="border-radius: 50%; box-shadow: 0 10px 25px rgba(0,0,0,0.3); border: 3px solid #6366f1;" alt="Muhammad Majid Ali" />
+  <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=300" width="160" height="160" style="border-radius: 50%; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border: 3px solid #8b5cf6;" alt="Kiran Yasmeen" />
 </p>
 
-<h3 align="center">Full-Stack Web Developer & UI/UX Specialist</h3>
+<h3 align="center">Web Developer & Freelancer</h3>
 
 <p align="center">
-  <em>Engineering high-performance, conversion-optimized digital experiences for global clients.</em>
+  <em>Building clean, modern, and responsive websites for businesses, startups, and personal brands.</em>
 </p>
 
 <p align="center">
@@ -19,97 +19,41 @@
 
 ---
 
-## 🎯 Executive Summary
-This project represents a state-of-the-art personal brand platform designed for high-impact client acquisition. It leverages the latest web technologies to deliver a seamless, accessible, and visually stunning user experience. The architecture is built on the pillars of **Performance**, **Scalability**, and **Modern Aesthetics**.
+## 🎯 Project Overview
+This is a premium, light-themed personal portfolio website built with **React**, **Tailwind CSS**, and **Framer Motion**. It features smooth scroll animations, a modern responsive design, and a clean aesthetic tailored for professional freelancers.
 
-## 🚀 Strategic Features
-
-### 💎 Design Excellence
-- **Glassmorphism 2.0**: Implementation of modern frosted-glass effects with optimized backdrop filters.
-- **Micro-interactions**: Subtle, purposeful animations that enhance user engagement without sacrificing performance.
-- **Premium Light Theme**: A custom-tuned light theme designed for visual comfort and high-end professional appeal.
-
-### ⚙️ Technical Superiority
-- **React 19 Concurrent Rendering**: Leveraging the latest React features for ultra-fast UI updates.
-- **Tailwind CSS 4 Engine**: Utilizing the high-performance JIT engine for minimal CSS bundle sizes.
-- **Component-Driven Architecture**: Fully modular codebase ensuring high maintainability and easy feature scaling.
-
-### 📈 Optimization Metrics
-| Metric | Score | Status |
-| :--- | :--- | :--- |
-| **Performance** | 100% | ✅ Verified |
-| **Accessibility** | 100% | ✅ Verified |
-| **Best Practices** | 100% | ✅ Verified |
-| **SEO** | 100% | ✅ Verified |
+## 🚀 Key Features
+- **Premium Light Theme**: Custom-tuned white and pastel violet/rose color palette.
+- **Responsive Design**: Optimized for Desktop, Tablet, and Mobile devices.
+- **Scroll Animations**: Smooth entrance animations for all sections using Framer Motion.
+- **Modern UI Components**: Glassmorphism effects, soft shadows, and rounded cards.
+- **Dynamic Projects & Services**: Easily manageable data structure for content updates.
 
 ---
 
-## 🛠️ Technology Ecosystem
-
-| Category | Technology | Purpose |
-| :--- | :--- | :--- |
-| **Core Framework** | React 19 | UI Orchestration & State Management |
-| **Design System** | Tailwind CSS 4 | Utility-first styling & Responsive Grid |
-| **Motion Engine** | Framer Motion | Fluid transitions & Gesture handling |
-| **Tooling** | Vite 6 | Lightning-fast HMR & Build optimization |
-| **Icons** | Lucide React | Clean, scalable vector iconography |
+## 🛠️ Tech Stack
+- **React 19**
+- **Tailwind CSS 4**
+- **Framer Motion**
+- **Vite 6**
+- **Lucide Icons**
 
 ---
 
-## 📂 Architecture Overview
-
-```typescript
-StyleSphere/
-├── public/              // Static assets & Brand identity
-├── src/
-│   ├── components/      // Atomic & Composite UI elements
-│   ├── data/            // Centralized content management (JSON/Objects)
-│   ├── hooks/           // Custom logic & Side-effect management
-│   ├── layouts/         // Structural page templates
-│   ├── styles/          // Global CSS & Tailwind configuration
-│   └── App.jsx          // Application entry point
-├── package.json         // Dependency manifest
-└── vite.config.js       // Build system configuration
-```
+## 📂 Repository Link
+[https://github.com/kiranyasmeen/Protfolio](https://github.com/kiranyasmeen/Protfolio)
 
 ---
 
-## ⚡ Deployment & Setup
-
-### Local Development
-1. **Clone the Source**:
-   ```bash
-   git clone https://github.com/malikmajid161/Professional-Portfolio.git
-   ```
-2. **Install Dependencies**:
-   ```bash
-   npm install --frozen-lockfile
-   ```
-3. **Initialize Dev Server**:
-   ```bash
-   npm run dev
-   ```
-
-### Production Build
-To generate a production-ready bundle, execute:
-```bash
-npm run build
-```
-
----
-
-## 📧 Strategic Inquiries
-
-I am available for high-level collaborations and complex web engineering projects.
-
-- **Direct Email**: [majid@example.com](mailto:majid@example.com)
-- **Professional Network**: [LinkedIn Profile](https://www.linkedin.com/in/muhammadmajidali)
-- **Technical Portfolio**: [GitHub Profile](https://github.com/malikmajid161)
-- **Instant Communication**: [WhatsApp Business](https://wa.me/923001234567)
+## ⚡ Setup & Development
+1. **Clone**: `git clone https://github.com/kiranyasmeen/Protfolio.git`
+2. **Install**: `npm install`
+3. **Run**: `npm run dev`
+4. **Build**: `npm run build`
 
 ---
 
 <p align="center">
-  Developed by <b>Muhammad Majid Ali</b> © 2026. <br/>
+  Developed by <b>Kiran Yasmeen</b> © 2026. <br/>
   <em>Committed to Digital Excellence.</em>
 </p>

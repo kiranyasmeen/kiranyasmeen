@@ -34,8 +34,8 @@ const Navbar = () => {
           animate={{ opacity: 1, x: 0 }}
           className="text-2xl font-bold tracking-tight cursor-pointer"
         >
-          <span className="text-slate-900">Muhammad </span>
-          <span className="text-primary-600">Majid Ali</span>
+          <span className="text-slate-900">Kiran </span>
+          <span className="text-primary-600">Yasmeen</span>
         </motion.div>
 
         {/* Desktop Menu */}
@@ -59,7 +59,7 @@ const Navbar = () => {
           
           <div className="flex items-center space-x-4">
             <a 
-              href="https://github.com/malikmajid161" 
+              href="https://github.com/kiranyasmeen" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 glass-card hover:text-primary-400"
@@ -130,7 +130,7 @@ const Navbar = () => {
                   Hire Me
                 </Link>
                 <a 
-                  href="https://github.com/malikmajid161" 
+                  href="https://github.com/kiranyasmeen" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn-outline flex items-center justify-center space-x-2"

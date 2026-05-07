@@ -1,56 +1,56 @@
 export const projects = [
   {
     id: 1,
-    title: "Business Portfolio Website",
-    description: "A premium business portfolio with modern UI, smooth animations, and optimized performance.",
-    image: "/projects/business.png",
-    tech: ["React", "Tailwind", "Framer Motion"],
-    live: "#",
-    github: "#"
+    title: "Creative Portfolio Website",
+    description: "A modern personal portfolio website for a freelancer with clean layout and responsive design.",
+    image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800",
+    tech: ["HTML", "CSS", "JavaScript"],
+    live: "https://github.com/kiranyasmeen",
+    github: "https://github.com/kiranyasmeen/Protfolio"
   },
   {
     id: 2,
-    title: "AI Chatbot Web App",
-    description: "Intelligent chatbot application integrated with OpenAI API for seamless user interaction.",
-    image: "/projects/chatbot.png",
-    tech: ["React", "Node.js", "OpenAI"],
-    live: "#",
-    github: "#"
+    title: "Business Landing Page",
+    description: "A professional landing page for a small business with service sections and contact form.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+    tech: ["React", "Tailwind CSS"],
+    live: "https://github.com/kiranyasmeen",
+    github: "https://github.com/kiranyasmeen/Protfolio"
   },
   {
     id: 3,
-    title: "University Timetable System",
-    description: "An AI-powered system for managing and optimizing university schedules and resources.",
-    image: "/projects/timetable.png",
-    tech: ["React", "Supabase", "Tailwind"],
-    live: "#",
-    github: "#"
+    title: "Online Education Website",
+    description: "A responsive education website for courses, teachers, and student information.",
+    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=800",
+    tech: ["HTML", "CSS", "Bootstrap"],
+    live: "https://github.com/kiranyasmeen",
+    github: "https://github.com/kiranyasmeen/Protfolio"
   },
   {
     id: 4,
-    title: "Library Management System",
-    description: "Full-featured management system with book tracking, user accounts, and real-time updates.",
-    image: "/projects/library.png",
-    tech: ["React", "Firebase", "MUI"],
-    live: "#",
-    github: "#"
+    title: "Restaurant Website",
+    description: "A beautiful restaurant website with menu, gallery, booking section, and contact details.",
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800",
+    tech: ["React", "CSS"],
+    live: "https://github.com/kiranyasmeen",
+    github: "https://github.com/kiranyasmeen/Protfolio"
   },
   {
     id: 5,
-    title: "Car Rental System",
-    description: "A modern car rental platform with booking system and dynamic inventory management.",
-    image: "/projects/car_rental.png",
-    tech: ["React", "Express", "MongoDB"],
-    live: "#",
-    github: "#"
+    title: "E-commerce Product Page",
+    description: "A clean product showcase page with pricing, product images, and call-to-action buttons.",
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800",
+    tech: ["JavaScript", "Tailwind CSS"],
+    live: "https://github.com/kiranyasmeen",
+    github: "https://github.com/kiranyasmeen/Protfolio"
   },
   {
     id: 6,
-    title: "Freelance Landing Page",
-    description: "High-converting landing page designed for freelancers to showcase services and testimonials.",
-    image: "/projects/freelance.png",
-    tech: ["React", "Tailwind", "AOS"],
-    live: "#",
-    github: "#"
+    title: "Freelancer Service Website",
+    description: "A service-based portfolio website designed to attract freelance clients.",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=800",
+    tech: ["React", "Tailwind CSS", "Vercel"],
+    live: "https://github.com/kiranyasmeen",
+    github: "https://github.com/kiranyasmeen/Protfolio"
   }
 ];

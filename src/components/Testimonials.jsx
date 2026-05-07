@@ -1,89 +1,79 @@
 import { motion } from 'framer-motion';
-import { Quote, Star } from 'lucide-react';
+import { Star, Quote } from 'lucide-react';
 
 const Testimonials = () => {
-  const reviews = [
+  const testimonials = [
     {
-      name: "John D.",
-      role: "E-commerce Business Owner",
-      platform: "Fiverr",
-      content: "Majid is an exceptional developer. He delivered my business website ahead of schedule and the quality was beyond my expectations. Highly recommended!",
+      name: "Freelance Client",
+      role: "Digital Entrepreneur",
+      content: "Kiran created a clean and professional website with great attention to detail. The results exceeded my expectations.",
       rating: 5,
-      image: "https://i.pravatar.cc/150?u=john"
     },
     {
-      name: "Sarah M.",
-      role: "Startup Founder",
-      platform: "Upwork",
-      content: "Excellent communication and technical skills. Majid helped us build our MVP from scratch using React and Tailwind. Truly a professional.",
+      name: "Startup Founder",
+      role: "Tech Innovator",
+      content: "The website design was modern, responsive, and exactly what we needed. Highly recommend her services for any web project.",
       rating: 5,
-      image: "https://i.pravatar.cc/150?u=sarah"
     },
     {
-      name: "Michael R.",
-      role: "Marketing Director",
-      platform: "Direct Client",
-      content: "I've worked with many developers, but Majid's attention to detail and modern design sense really stand out. Our conversion rate increased significantly.",
+      name: "Small Business Owner",
+      role: "Commerce Leader",
+      content: "Excellent communication, beautiful design, and fast delivery. Kiran is a true professional who understands user experience.",
       rating: 5,
-      image: "https://i.pravatar.cc/150?u=michael"
     }
   ];
 
   return (
-    <section id="testimonials" className="section-padding bg-slate-50/50">
-      <div className="container mx-auto px-6 md:px-12">
+    <section id="testimonials" className="section-padding bg-white overflow-hidden relative">
+      <div className="container mx-auto px-6 md:px-12 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="section-title">Client Testimonials</h2>
+          <h2 className="section-title">What People <span className="text-gradient">Say</span></h2>
           <p className="section-subtitle">
-            Don't just take my word for it. Here's what my clients have to say about working with me on various platforms.
+            Feedback from clients and partners who have experienced the quality and dedication of my work.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {reviews.map((review, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="glass-card p-10 relative"
+              transition={{ delay: index * 0.2 }}
+              whileHover={{ y: -10 }}
+              className="p-10 glass-card border-slate-100/60 relative"
             >
-              <div className="absolute -top-5 right-10 w-12 h-12 rounded-full bg-primary-600 flex items-center justify-center shadow-lg shadow-primary-600/30">
-                <Quote className="text-slate-900" size={20} />
+              <Quote className="absolute top-8 right-8 text-primary-100 opacity-50" size={48} />
+              <div className="flex mb-6 text-accent-rose">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <Star key={i} size={18} fill="currentColor" />
+                ))}
               </div>
-
-              <div className="flex items-center space-x-4 mb-8">
-                <img src={review.image} alt={review.name} className="w-16 h-16 rounded-full border-2 border-primary-500/30" />
-                <div>
-                  <h4 className="text-xl font-bold text-slate-900">{review.name}</h4>
-                  <p className="text-sm text-slate-400">{review.role}</p>
-                </div>
-              </div>
-
-              <div className="flex text-yellow-500 mb-6">
-                {[...Array(review.rating)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}
-              </div>
-
-              <p className="text-slate-500 italic leading-relaxed mb-8">
-                "{review.content}"
+              <p className="text-lg text-slate-500 leading-relaxed italic mb-8 relative z-10 font-medium">
+                "{testimonial.content}"
               </p>
-
-              <div className="pt-6 border-t border-slate-200/50">
-                <span className="text-xs font-bold uppercase tracking-widest text-primary-500">
-                  Client from {review.platform}
-                </span>
+              <div className="flex items-center gap-4 border-t border-slate-50 pt-6">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-primary-400 to-accent-rose flex items-center justify-center text-white font-black">
+                  {testimonial.name.charAt(0)}
+                </div>
+                <div>
+                  <h4 className="font-extrabold text-slate-900">{testimonial.name}</h4>
+                  <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{testimonial.role}</p>
+                </div>
               </div>
             </motion.div>
           ))}
         </div>
       </div>
+      
+      {/* Decorative Blob */}
+      <div className="absolute top-1/2 right-0 w-[600px] h-[600px] bg-accent-rose/5 rounded-full blur-[100px] translate-x-1/2"></div>
     </section>
   );
 };
