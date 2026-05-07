@@ -48,18 +48,18 @@ const Projects = () => {
                 </div>
               </div>
               
-              <div className="p-8 flex-1 flex flex-col">
+              <div className="p-6 md:p-8 flex-1 flex flex-col">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((t) => (
-                    <span key={t} className="px-3 py-1 rounded-full bg-primary-50 text-primary-600 text-[10px] font-black uppercase tracking-wider">
+                    <span key={t} className="px-2.5 py-1 rounded-full bg-primary-50 text-primary-600 text-[9px] md:text-[10px] font-black uppercase tracking-wider">
                       {t}
                     </span>
                   ))}
                 </div>
-                <h3 className="text-2xl font-black text-slate-900 mb-4 group-hover:text-primary-600 transition-colors">
+                <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-3 md:mb-4 group-hover:text-primary-600 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-slate-500 mb-8 font-medium line-clamp-3">
+                <p className="text-sm md:text-slate-500 mb-6 md:mb-8 font-medium line-clamp-3">
                   {project.description}
                 </p>
                 <div className="mt-auto flex items-center justify-between pt-6 border-t border-slate-50">

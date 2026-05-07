@@ -1,56 +1,56 @@
 export const projects = [
   {
     id: 1,
-    title: "Creative Portfolio Website",
-    description: "A modern personal portfolio website for a freelancer with clean layout and responsive design.",
-    image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800",
-    tech: ["HTML", "CSS", "JavaScript"],
-    live: "https://github.com/kiranyasmeen",
-    github: "https://github.com/kiranyasmeen/Protfolio"
+    title: "Fluxion AI",
+    description: "A high-performance generative art platform using advanced diffusion models. Features a cyberpunk dark-mode interface.",
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
+    tech: ["React", "Diffusion Models", "Tailwind CSS"],
+    github: "https://github.com/kiranyasmeen/ai-image-generator",
+    live: "https://fluxion-ai-demo.vercel.app"
   },
   {
     id: 2,
-    title: "Business Landing Page",
-    description: "A professional landing page for a small business with service sections and contact form.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
-    tech: ["React", "Tailwind CSS"],
-    live: "https://github.com/kiranyasmeen",
-    github: "https://github.com/kiranyasmeen/Protfolio"
+    title: "NeuroPulse Dashboard",
+    description: "Real-time neural health monitoring system with precision data visualization and predictive health metrics.",
+    image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=800",
+    tech: ["Neural Imaging", "D3.js", "Medical Tech"],
+    github: "https://github.com/kiranyasmeen/neural-health-dashboard",
+    live: "https://neuropulse-demo.vercel.app"
   },
   {
     id: 3,
-    title: "Online Education Website",
-    description: "A responsive education website for courses, teachers, and student information.",
-    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=800",
-    tech: ["HTML", "CSS", "Bootstrap"],
-    live: "https://github.com/kiranyasmeen",
-    github: "https://github.com/kiranyasmeen/Protfolio"
+    title: "VibeCheck Sentiment",
+    description: "An emotional intelligence API that analyzes hidden nuances and sarcasm in textual data using NLP.",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800",
+    tech: ["NLP", "Python", "Sentiment Analysis"],
+    github: "https://github.com/kiranyasmeen/sentiment-tool",
+    live: "https://vibecheck-demo.vercel.app"
   },
   {
     id: 4,
-    title: "Restaurant Website",
-    description: "A beautiful restaurant website with menu, gallery, booking section, and contact details.",
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800",
-    tech: ["React", "CSS"],
-    live: "https://github.com/kiranyasmeen",
-    github: "https://github.com/kiranyasmeen/Protfolio"
+    title: "NeoFrame Portfolio",
+    description: "A brutalist, high-impact portfolio framework powered by AI curation for creative developers.",
+    image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800",
+    tech: ["Brutalist UI", "React 19", "AI Curation"],
+    github: "https://github.com/kiranyasmeen/ai-portfolio",
+    live: "https://neoframe-demo.vercel.app"
   },
   {
     id: 5,
-    title: "E-commerce Product Page",
-    description: "A clean product showcase page with pricing, product images, and call-to-action buttons.",
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800",
-    tech: ["JavaScript", "Tailwind CSS"],
-    live: "https://github.com/kiranyasmeen",
-    github: "https://github.com/kiranyasmeen/Protfolio"
+    title: "Atlas DataViz",
+    description: "Scientific data visualization studio for mapping complex datasets into intuitive visual systems.",
+    image: "https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&q=80&w=800",
+    tech: ["Big Data", "Atlas Engine", "Grid UI"],
+    github: "https://github.com/kiranyasmeen/dataviz-studio",
+    live: "https://atlas-dataviz-demo.vercel.app"
   },
   {
     id: 6,
-    title: "Freelancer Service Website",
-    description: "A service-based portfolio website designed to attract freelance clients.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=800",
-    tech: ["React", "Tailwind CSS", "Vercel"],
-    live: "https://github.com/kiranyasmeen",
-    github: "https://github.com/kiranyasmeen/Protfolio"
+    title: "Zenith Task Manager",
+    description: "A zen-inspired productivity tool using AI to prioritize tasks based on user energy levels.",
+    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=800",
+    tech: ["Productivity AI", "Focus Mode", "Zen UI"],
+    github: "https://github.com/kiranyasmeen/task-manager",
+    live: "https://zenith-tasks-demo.vercel.app"
   }
 ];

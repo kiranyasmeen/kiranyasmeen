@@ -1,18 +1,18 @@
 import { motion } from 'framer-motion';
-import { Award, CheckCircle, Users, Zap } from 'lucide-react';
+import { Binary, GraduationCap, Cpu, Lightbulb } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { label: 'Learning & Building', value: '2+ Years', icon: <Award className="text-primary-500" /> },
-    { label: 'Projects Completed', value: '15+', icon: <CheckCircle className="text-accent-rose" /> },
-    { label: 'Client Focus', value: '100%', icon: <Users className="text-accent-sky" /> },
-    { label: 'Fast & Responsive', value: 'Design', icon: <Zap className="text-accent-purple" /> },
+    { label: 'Academic Focus', value: 'AI Student', icon: <GraduationCap className="text-indigo-500" /> },
+    { label: 'Research Areas', value: 'ML & Web', icon: <Binary className="text-indigo-500" /> },
+    { label: 'Technical Core', value: 'Python/JS', icon: <Cpu className="text-indigo-500" /> },
+    { label: 'Innovation', value: 'Driven', icon: <Lightbulb className="text-indigo-500" /> },
   ];
 
   return (
     <section id="about" className="section-padding relative bg-white">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
+        <div className="flex flex-col lg:flex-row items-center gap-20">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -20,29 +20,29 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="lg:w-1/2"
           >
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-8 tracking-tight">
-              About <span className="text-gradient">Me</span>
+            <h2 className="section-title text-left mb-8">
+              Fusing <span className="text-gradient">AI</span> with <br /> Web Engineering
             </h2>
-            <p className="text-xl text-slate-500 leading-relaxed mb-10 font-medium">
-              I am a web developer focused on creating clean, responsive, and modern websites. 
-              I enjoy turning ideas into beautiful digital experiences using modern web technologies.
+            <p className="text-xl text-slate-500 leading-relaxed mb-8 font-medium">
+              I am an Artificial Intelligence student with a deep passion for building intelligent web systems. 
+              My journey involves exploring how machine learning and data science can revolutionize the user experience on the modern web.
             </p>
             <p className="text-lg text-slate-400 leading-relaxed mb-12">
-              My approach combines technical precision with artistic flair, ensuring that every pixel serves a purpose 
-              and every interaction feels natural. Whether it's a startup landing page or a complex web application, 
-              I bring commitment and excellence to every project.
+              Currently pursuing my studies in Pakistan, I focus on creating high-performance websites that aren't just visually 
+              stunning but also smart and data-driven. From building custom neural networks to developing seamless React interfaces, 
+              I am dedicated to pushing the boundaries of what's possible in digital technology.
             </p>
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-4 md:gap-8">
               {stats.map((stat, index) => (
                 <motion.div
                   key={index}
-                  whileHover={{ y: -5 }}
-                  className="p-6 glass-card border-slate-100"
+                  whileHover={{ y: -8 }}
+                  className="p-5 md:p-8 glass-card border-slate-100 bg-slate-50/30"
                 >
-                  <div className="mb-4">{stat.icon}</div>
-                  <div className="text-2xl font-black text-slate-900 mb-1">{stat.value}</div>
-                  <div className="text-sm font-bold text-slate-400 uppercase tracking-wider">{stat.label}</div>
+                  <div className="mb-3 md:mb-4">{stat.icon}</div>
+                  <div className="text-lg md:text-2xl font-black text-slate-900 mb-1">{stat.value}</div>
+                  <div className="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
@@ -55,18 +55,17 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="lg:w-1/2 relative"
           >
-            <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-primary-200/50">
+            <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-slate-50">
               <img 
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800" 
-                alt="Workspace" 
-                className="w-full h-auto grayscale-[0.2] hover:grayscale-0 transition-all duration-700"
+                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800" 
+                alt="AI Technology Visual" 
+                className="w-full h-auto grayscale-[0.3] hover:grayscale-0 transition-all duration-1000"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary-500/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/10 to-transparent"></div>
             </div>
             
-            {/* Decorative Elements */}
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-accent-rose/10 rounded-full blur-3xl"></div>
-            <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-primary-500/10 rounded-full blur-3xl"></div>
+            {/* Background Tech Circle */}
+            <div className="absolute -top-10 -right-10 w-64 h-64 border-[40px] border-indigo-50 rounded-full -z-10"></div>
           </motion.div>
         </div>
       </div>

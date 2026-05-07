@@ -25,17 +25,17 @@ const Skills = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="p-10 glass-card border-slate-100/50 hover:border-primary-100"
+              className="p-6 md:p-10 glass-card border-slate-100/50 hover:border-primary-100"
             >
-              <h3 className="text-2xl font-black text-slate-900 mb-8 border-b border-slate-100 pb-4 inline-block">
+              <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-6 md:mb-8 border-b border-slate-100 pb-4 inline-block">
                 {category.title}
               </h3>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-3 md:gap-4">
                 {category.skills.map((skill) => (
                   <motion.div
                     key={skill}
                     whileHover={{ scale: 1.1, backgroundColor: '#f5f3ff', color: '#7c3aed' }}
-                    className="px-5 py-3 rounded-xl bg-slate-50 text-slate-600 font-bold text-sm shadow-sm transition-colors cursor-default"
+                    className="px-4 py-2.5 md:px-5 md:py-3 rounded-xl bg-slate-50 text-slate-600 font-bold text-xs md:text-sm shadow-sm transition-colors cursor-default"
                   >
                     {skill}
                   </motion.div>
