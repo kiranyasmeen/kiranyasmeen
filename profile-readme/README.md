@@ -1,41 +1,37 @@
-<p align="center">
+﻿<p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=280&section=header&text=Kiran%20Yasmeen&fontSize=80&animation=fadeIn&fontAlignY=35" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Outfit&size=35&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=600&lines=AI+Student+%26+Researcher;Full-Stack+Web+Engineer;Neural+Network+Architect;Awwwards-Inspired+Designer" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Outfit&size=35&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=600&lines=AI+Student+%26+Researcher;Full-Stack+Web+Engineer;Neural+Network+Architect;Awwwards-Inspired+Designer" />
 </p>
 
 ---
 
-### ?? About Me
-<p align="left">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHpqc2R6cWF6emR6emR6emR6emR6emR6emR6emR6emR6emR6emR6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/qgQUggAC3Pfv687qPC/giphy.gif" align="right" width="350" />
-  
-  I am a passionate **AI Specialist** and **Modern Web Architect** from Pakistan. I bridge the gap between complex neural architectures and high-end, animated user interfaces.
+### 💫 About Me
+I am a passionate **AI Specialist** and **Modern Web Architect** from Pakistan. I bridge the gap between complex neural architectures and high-end, animated user interfaces.
 
-  - ?? I�m currently working on **Generative AI & Neural Health Dashboards**
-  - ?? I�m currently learning **Advanced Reinforcement Learning**
-  - ? Fun fact: I believe **Design is the silent ambassador of your brand.**
-</p>
+- 🔭 I’m currently working on **Generative AI & Neural Health Dashboards**
+- 🌱 I’m currently learning **Advanced Reinforcement Learning**
+- ⚡ Fun fact: I believe **Design is the silent ambassador of your brand.**
 
 ---
 
-### ?? Achievements & Excellence
+### 🏆 Achievements & Excellence
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=kiranyasmeen&theme=radical&no-bg=true&margin-w=15" width="100%" />
 </p>
 
 ---
 
-### ??? Technical Arsenal
+### 🛠️ Technical Arsenal
 <div align="center">
   <img src="https://skillicons.dev/icons?i=python,js,react,tailwind,nodejs,pytorch,tensorflow,git,nextjs,fastapi,mongodb,postgres" />
 </div>
 
 ---
 
-### ?? Neural Activity & Insights
+### 📉 Neural Activity & Insights
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=kiranyasmeen&theme=tokyonight&area=true" width="100%" />
 </p>
