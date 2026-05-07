@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import { Github, Linkedin, Twitter, Mail, ArrowUp } from 'lucide-react';
+import { Twitter, Mail, ArrowUp } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from './Icons';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,10 +23,10 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <motion.a whileHover={{ y: -5 }} href="https://github.com/kiranyasmeen" target="_blank" className="p-3 bg-slate-50 rounded-xl text-slate-600 hover:text-primary-600 hover:bg-primary-50 transition-all">
-                <Github size={20} />
+                <GithubIcon size={20} />
               </motion.a>
               <motion.a whileHover={{ y: -5 }} href="#" className="p-3 bg-slate-50 rounded-xl text-slate-600 hover:text-primary-600 hover:bg-primary-50 transition-all">
-                <Linkedin size={20} />
+                <LinkedinIcon size={20} />
               </motion.a>
               <motion.a whileHover={{ y: -5 }} href="#" className="p-3 bg-slate-50 rounded-xl text-slate-600 hover:text-primary-600 hover:bg-primary-50 transition-all">
                 <Twitter size={20} />

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Github as GithubIcon, MousePointer2 } from 'lucide-react';
+import { ArrowRight, ExternalLink, MousePointer2 } from 'lucide-react';
+import { GithubIcon } from './Icons';
 import { Link } from 'react-scroll';
 
 const Hero = () => {

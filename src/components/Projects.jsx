@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { projects } from '../data/projects';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { GithubIcon } from './Icons';
 
 const Projects = () => {
   return (
@@ -41,7 +42,7 @@ const Projects = () => {
                       <ExternalLink size={20} />
                     </a>
                     <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2 bg-white rounded-full text-slate-900 hover:bg-primary-500 hover:text-white transition-all">
-                      <Github size={20} />
+                      <GithubIcon size={20} />
                     </a>
                   </div>
                 </div>
@@ -66,7 +67,7 @@ const Projects = () => {
                     Live Demo <ExternalLink size={16} className="group-hover/link:translate-x-0.5 transition-transform" />
                   </a>
                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-slate-400 hover:text-slate-900 flex items-center gap-2">
-                    Source Code <Github size={16} />
+                    Source Code <GithubIcon size={16} />
                   </a>
                 </div>
               </div>

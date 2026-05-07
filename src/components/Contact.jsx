@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Github, Send, Phone } from 'lucide-react';
+import { Mail, MapPin, Send, Phone } from 'lucide-react';
+import { GithubIcon } from './Icons';
 
 const Contact = () => {
   return (
@@ -53,7 +54,7 @@ const Contact = () => {
 
               <div className="flex items-center gap-6 group">
                 <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-slate-900 shadow-sm group-hover:scale-110 transition-transform duration-300">
-                  <Github size={28} />
+                  <GithubIcon size={28} />
                 </div>
                 <div>
                   <h4 className="font-extrabold text-slate-900 text-lg">GitHub</h4>
